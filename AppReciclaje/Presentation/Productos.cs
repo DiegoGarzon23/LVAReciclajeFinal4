@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Presentation
+namespace GUI_V_2
 {
     public partial class Productos : Form
     {
@@ -17,7 +17,7 @@ namespace Presentation
             InitializeComponent();
         }
 
-        private void btnCerrarP_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
