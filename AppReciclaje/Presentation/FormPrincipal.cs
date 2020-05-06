@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using GUI_V_2;
+using LVAReciclajeTPDA;
 
 namespace Presentation
 {
@@ -89,9 +90,7 @@ namespace Presentation
                  MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
         }
-       
 
-
-
+     
     }
 }

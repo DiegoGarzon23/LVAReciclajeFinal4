@@ -19,6 +19,7 @@ namespace LVAReciclajeTPDA.Data
        
         public string TypeProduct { get; set; }
 
+
         public ICollection<PurchaseDetail> PurchaseDetails { get; set; }
         public ICollection<SaleDetail> SaleDetails { get; set; }
 

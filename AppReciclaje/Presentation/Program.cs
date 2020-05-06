@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GUI_V_2;
+using LVAReciclajeTPDA.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
