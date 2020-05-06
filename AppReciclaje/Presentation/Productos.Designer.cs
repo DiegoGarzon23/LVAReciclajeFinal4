@@ -32,6 +32,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Label();
             this.grdDatos = new System.Windows.Forms.DataGridView();
+            this.pnlDatos = new System.Windows.Forms.Panel();
+            this.cmbTipoP = new System.Windows.Forms.ComboBox();
+            this.lblTipoP = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.lblDescr = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.lblPrecio = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,30 +62,9 @@
             this.typeProductDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purchaseDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saleDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pnlDatos = new System.Windows.Forms.Panel();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.lblId = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.lblDescr = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblTipoP = new System.Windows.Forms.Label();
-            this.cmbTipoP = new System.Windows.Forms.ComboBox();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +85,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCerrar.Location = new System.Drawing.Point(770, 9);
+            this.btnCerrar.Location = new System.Drawing.Point(829, 17);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(17, 17);
             this.btnCerrar.TabIndex = 3;
@@ -113,65 +113,6 @@
             this.grdDatos.TabIndex = 4;
             this.grdDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatos_CellContentClick);
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            // 
-            // typeProductDataGridViewTextBoxColumn
-            // 
-            this.typeProductDataGridViewTextBoxColumn.DataPropertyName = "TypeProduct";
-            this.typeProductDataGridViewTextBoxColumn.HeaderText = "TypeProduct";
-            this.typeProductDataGridViewTextBoxColumn.Name = "typeProductDataGridViewTextBoxColumn";
-            // 
-            // purchaseDetailsDataGridViewTextBoxColumn
-            // 
-            this.purchaseDetailsDataGridViewTextBoxColumn.DataPropertyName = "PurchaseDetails";
-            this.purchaseDetailsDataGridViewTextBoxColumn.HeaderText = "PurchaseDetails";
-            this.purchaseDetailsDataGridViewTextBoxColumn.Name = "purchaseDetailsDataGridViewTextBoxColumn";
-            // 
-            // saleDetailsDataGridViewTextBoxColumn
-            // 
-            this.saleDetailsDataGridViewTextBoxColumn.DataPropertyName = "SaleDetails";
-            this.saleDetailsDataGridViewTextBoxColumn.HeaderText = "SaleDetails";
-            this.saleDetailsDataGridViewTextBoxColumn.Name = "saleDetailsDataGridViewTextBoxColumn";
-            // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(LVAReciclajeTPDA.Data.Product);
-            // 
             // pnlDatos
             // 
             this.pnlDatos.Controls.Add(this.cmbTipoP);
@@ -192,139 +133,6 @@
             this.pnlDatos.Name = "pnlDatos";
             this.pnlDatos.Size = new System.Drawing.Size(738, 175);
             this.pnlDatos.TabIndex = 5;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Name", true));
-            this.txtNombre.Location = new System.Drawing.Point(81, 45);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(273, 20);
-            this.txtNombre.TabIndex = 3;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(31, 48);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(44, 13);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // txtId
-            // 
-            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Id", true));
-            this.txtId.Location = new System.Drawing.Point(81, 19);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(205, 20);
-            this.txtId.TabIndex = 1;
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(31, 26);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(16, 13);
-            this.lblId.TabIndex = 0;
-            this.lblId.Text = "Id";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(227, 395);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(130, 36);
-            this.btnGuardar.TabIndex = 6;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(363, 395);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(95, 36);
-            this.btnAgregar.TabIndex = 7;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // txtPrecio
-            // 
-            this.txtPrecio.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Price", true));
-            this.txtPrecio.Location = new System.Drawing.Point(81, 97);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(273, 20);
-            this.txtPrecio.TabIndex = 7;
-            // 
-            // lblPrecio
-            // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(31, 104);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
-            this.lblPrecio.TabIndex = 6;
-            this.lblPrecio.Text = "Precio";
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Quantity", true));
-            this.txtCantidad.Location = new System.Drawing.Point(81, 71);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(273, 20);
-            this.txtCantidad.TabIndex = 5;
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(26, 74);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
-            this.lblCantidad.TabIndex = 4;
-            this.lblCantidad.Text = "Cantidad";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Description", true));
-            this.txtDescripcion.Location = new System.Drawing.Point(81, 123);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(273, 20);
-            this.txtDescripcion.TabIndex = 9;
-            // 
-            // lblDescr
-            // 
-            this.lblDescr.AutoSize = true;
-            this.lblDescr.Location = new System.Drawing.Point(12, 130);
-            this.lblDescr.Name = "lblDescr";
-            this.lblDescr.Size = new System.Drawing.Size(63, 13);
-            this.lblDescr.TabIndex = 8;
-            this.lblDescr.Text = "Descripción";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Code", true));
-            this.txtCodigo.Location = new System.Drawing.Point(456, 19);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(267, 20);
-            this.txtCodigo.TabIndex = 11;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(410, 26);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo.TabIndex = 10;
-            this.lblCodigo.Text = "Codigo";
-            // 
-            // lblTipoP
-            // 
-            this.lblTipoP.AutoSize = true;
-            this.lblTipoP.Location = new System.Drawing.Point(361, 52);
-            this.lblTipoP.Name = "lblTipoP";
-            this.lblTipoP.Size = new System.Drawing.Size(89, 13);
-            this.lblTipoP.TabIndex = 12;
-            this.lblTipoP.Text = "Tipo de Producto";
             // 
             // cmbTipoP
             // 
@@ -410,6 +218,139 @@
             this.cmbTipoP.Size = new System.Drawing.Size(267, 21);
             this.cmbTipoP.TabIndex = 13;
             // 
+            // lblTipoP
+            // 
+            this.lblTipoP.AutoSize = true;
+            this.lblTipoP.Location = new System.Drawing.Point(361, 52);
+            this.lblTipoP.Name = "lblTipoP";
+            this.lblTipoP.Size = new System.Drawing.Size(89, 13);
+            this.lblTipoP.TabIndex = 12;
+            this.lblTipoP.Text = "Tipo de Producto";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Code", true));
+            this.txtCodigo.Location = new System.Drawing.Point(456, 19);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(267, 20);
+            this.txtCodigo.TabIndex = 11;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(410, 26);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
+            this.lblCodigo.TabIndex = 10;
+            this.lblCodigo.Text = "Codigo";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Description", true));
+            this.txtDescripcion.Location = new System.Drawing.Point(81, 123);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(273, 20);
+            this.txtDescripcion.TabIndex = 9;
+            // 
+            // lblDescr
+            // 
+            this.lblDescr.AutoSize = true;
+            this.lblDescr.Location = new System.Drawing.Point(12, 130);
+            this.lblDescr.Name = "lblDescr";
+            this.lblDescr.Size = new System.Drawing.Size(63, 13);
+            this.lblDescr.TabIndex = 8;
+            this.lblDescr.Text = "Descripción";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Price", true));
+            this.txtPrecio.Location = new System.Drawing.Point(81, 97);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(273, 20);
+            this.txtPrecio.TabIndex = 7;
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Location = new System.Drawing.Point(31, 104);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
+            this.lblPrecio.TabIndex = 6;
+            this.lblPrecio.Text = "Precio";
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Quantity", true));
+            this.txtCantidad.Location = new System.Drawing.Point(81, 71);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(273, 20);
+            this.txtCantidad.TabIndex = 5;
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(26, 74);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
+            this.lblCantidad.TabIndex = 4;
+            this.lblCantidad.Text = "Cantidad";
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Name", true));
+            this.txtNombre.Location = new System.Drawing.Point(81, 45);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(273, 20);
+            this.txtNombre.TabIndex = 3;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(31, 48);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // txtId
+            // 
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Id", true));
+            this.txtId.Location = new System.Drawing.Point(81, 19);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(205, 20);
+            this.txtId.TabIndex = 1;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(31, 26);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(16, 13);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "Id";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(227, 395);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(130, 36);
+            this.btnGuardar.TabIndex = 6;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(363, 395);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(95, 36);
+            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // btEditar
             // 
             this.btEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -445,12 +386,71 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(LVAReciclajeTPDA.Data.Product);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
+            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            // 
+            // typeProductDataGridViewTextBoxColumn
+            // 
+            this.typeProductDataGridViewTextBoxColumn.DataPropertyName = "TypeProduct";
+            this.typeProductDataGridViewTextBoxColumn.HeaderText = "TypeProduct";
+            this.typeProductDataGridViewTextBoxColumn.Name = "typeProductDataGridViewTextBoxColumn";
+            // 
+            // purchaseDetailsDataGridViewTextBoxColumn
+            // 
+            this.purchaseDetailsDataGridViewTextBoxColumn.DataPropertyName = "PurchaseDetails";
+            this.purchaseDetailsDataGridViewTextBoxColumn.HeaderText = "PurchaseDetails";
+            this.purchaseDetailsDataGridViewTextBoxColumn.Name = "purchaseDetailsDataGridViewTextBoxColumn";
+            // 
+            // saleDetailsDataGridViewTextBoxColumn
+            // 
+            this.saleDetailsDataGridViewTextBoxColumn.DataPropertyName = "SaleDetails";
+            this.saleDetailsDataGridViewTextBoxColumn.HeaderText = "SaleDetails";
+            this.saleDetailsDataGridViewTextBoxColumn.Name = "saleDetailsDataGridViewTextBoxColumn";
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(871, 606);
+            this.ClientSize = new System.Drawing.Size(858, 483);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btEditar);
@@ -465,9 +465,9 @@
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

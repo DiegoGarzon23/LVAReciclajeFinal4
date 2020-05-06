@@ -49,6 +49,7 @@
             this.iconcerrar = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
@@ -58,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            this.panelContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -261,7 +263,7 @@
             // 
             // BarraTitulo
             // 
-            this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BarraTitulo.BackColor = System.Drawing.Color.Silver;
             this.BarraTitulo.Controls.Add(this.iconminimizar);
             this.BarraTitulo.Controls.Add(this.iconrestaurar);
             this.BarraTitulo.Controls.Add(this.iconmaximizar);
@@ -341,12 +343,22 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
+            this.panelContenedor.Controls.Add(this.dateTimePicker1);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(252, 45);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1048, 605);
             this.panelContenedor.TabIndex = 2;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(654, 567);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(382, 38);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // FormPrincipal
             // 
@@ -369,6 +381,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconmaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconcerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            this.panelContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -395,6 +408,7 @@
         private System.Windows.Forms.Button btnEmpleado;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
